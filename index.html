@@ -1,567 +1,568 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth bg-[#030305] text-white">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Méthode SAMYN - Productivité d'Élite</title>
-    
-    <!-- 
-      💎 TOUCHES DU TOP 1% (2026) : FAVICON ULTRA-MODERNE (ZERO-LATENCY)
-      Utilisation d'un SVG inline encodé pour une netteté parfaite sur tous les écrans (Retina, 4K, 8K).
-      Design : Fond Dark luxury avec l'éclair de productivité en dégradé Ambre/Orange/Rouge.
-      Avantage : Aucune requête HTTP supplémentaire, affichage instantané et adaptation native.
-    -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23fbbf24'/%3E%3Cstop offset='50%25' stop-color='%23f97316'/%3E%3Cstop offset='100%25' stop-color='%23ef4444'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='512' height='512' rx='128' fill='%230a0a0a'/%3E%3Cpath d='M290 120 L150 320 L270 320 L230 420 L370 220 L250 220 Z' fill='url(%23g)'/%3E%3C/svg%3E">
-    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23fbbf24'/%3E%3Cstop offset='50%25' stop-color='%23f97316'/%3E%3Cstop offset='100%25' stop-color='%23ef4444'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='512' height='512' rx='128' fill='%230a0a0a'/%3E%3Cpath d='M290 120 L150 320 L270 320 L230 420 L370 220 L250 220 Z' fill='url(%23g)'/%3E%3C/svg%3E">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="La Méthode SAMYN - Framework d'excellence, d'innovation et de croissance.">
+    <title>La Méthode SAMYN | Excellence & Stratégie</title>
 
-    <!-- 
-      CORRECTIF EXPERT : SEO & PARTAGE SOCIAL 
-      Ajout d'une description, de mots-clés et de balises Open Graph / Twitter Card
-      pour un référencement et un partage optimaux sur les réseaux sociaux.
-    -->
-    <meta name="description" content="Découvrez la Méthode SAMYN, l'approche Noiro-Musulmane éprouvée pour transcender vos objectifs personnels et professionnels.">
-    <meta name="keywords" content="Méthode SAMYN, productivité, stratégie, vision, exécution, noiro-musulman, samyn-antoy abasse">
-    
-    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
-    <meta property="og:title" content="Méthode SAMYN - Productivité d'Élite">
-    <meta property="og:description" content="L'approche Noiro-Musulmane éprouvée pour transcender vos objectifs personnels et professionnels.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://technerdsam.github.io/methode-samyn/"> <!-- Mettez l'URL de production ici -->
-    <meta property="og:image" content="https://placehold.co/1200x630/FF8C00/FFFFFF?text=M%C3%A9thode+SAMYN"> <!-- URL d'une image de partage -->
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Méthode SAMYN - Productivité d'Élite">
-    <meta name="twitter:description" content="L'approche Noiro-Musulmane éprouvée pour transcender vos objectifs personnels et professionnels.">
-    <meta name="twitter:image" content="https://placehold.co/1200x630/FF8C00/FFFFFF?text=M%C3%A9thode+SAMYN">
+    <!-- Favicon SVG Premium (Gold/Dark) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23030305'/><path d='M30 70 L50 30 L70 70' stroke='%23C39A54' stroke-width='6' fill='none' stroke-linejoin='round' stroke-linecap='round'/><circle cx='50' cy='60' r='4' fill='%23C39A54'/></svg>">
 
-    <!-- 1. Tailwind CSS (pour le design moderne et réactif) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- 2. Google Fonts (Police d'origine : Poppins) -->
+    <!-- Fonts: Syne (Avant-Garde Display) & Inter (Body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- 3. Font Awesome (Icônes d'origine) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- 4. GSAP & ScrollTrigger (pour les animations "d'élite") -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    
-    <!-- 5. Three.js (pour la scène 3D "immersive") -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
 
-    <!-- Configuration et Styles Personnalisés -->
+    <!-- Configuration Tailwind Custom -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Syne', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#030305',
+                            surface: '#0A0A0F',
+                            card: 'rgba(255, 255, 255, 0.02)',
+                            gold: '#C39A54',     /* Premium Gold */
+                            goldHover: '#DFB671',
+                            muted: '#8A8A93',
+                        }
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                        'gold-gradient': 'linear-gradient(135deg, #C39A54 0%, #8A6D3B 100%)',
+                    },
+                    animation: {
+                        'blob': 'blob 15s infinite',
+                    },
+                    keyframes: {
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                            '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
     <style>
-        /* Configuration de la police Poppins pour Tailwind */
+        /* ==========================================
+           RESET, GLOBALS & SCROLLBAR
+           ========================================== */
         body {
-            font-family: 'Poppins', sans-serif;
+            cursor: none; /* Custom cursor */
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
-        /* CORRECTIF EXPERT : UX (Fixed Header) */
-        /* Ajoute un décalage au scroll pour que les ancres (ex: #phase1) */
-        /* ne soient pas masquées par l'en-tête fixe (h-20 = 5rem = 80px) */
-        html {
-            scroll-behavior: smooth;
-            scroll-padding-top: 80px; /* Hauteur de l'en-tête */
-        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #030305; }
+        ::-webkit-scrollbar-thumb { background: #1a1a24; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #C39A54; }
 
-        /* Toile de fond pour Three.js */
-        #hero-canvas {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1; /* Derrière le contenu hero, mais devant le fond */
-        }
-
-        /* Assure que le contenu du hero est au-dessus de la toile 3D */
-        .hero-content {
-            position: relative;
-            z-index: 2;
-        }
-        
-        /* Styles pour les animations GSAP (état initial) */
-        .gsap-title, .gsap-card {
-            opacity: 0;
-            transform: translateY(30px);
-        }
-
-        /* CORRECTIF EXPERT : UX (Menu Mobile Fluide) */
-        /* Prépare le menu mobile pour une transition */
-        #mobile-menu {
-            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-        }
-        #mobile-menu.hidden {
-            opacity: 0;
-            transform: translateY(-10px);
+        /* ==========================================
+           CUSTOM CURSOR (Dot + Glow)
+           ========================================== */
+        .cursor-dot {
+            position: fixed;
+            top: 0; left: 0;
+            width: 8px; height: 8px;
+            background: #C39A54;
+            border-radius: 50%;
             pointer-events: none;
+            z-index: 10000;
+            transform: translate(-50%, -50%);
+            transition: width 0.3s, height 0.3s, background-color 0.3s;
         }
-        #mobile-menu:not(.hidden) {
-            opacity: 1;
-            transform: translateY(0);
-            pointer-events: auto;
+        .cursor-glow {
+            position: fixed;
+            top: 0; left: 0;
+            width: 40px; height: 40px;
+            border: 1px solid rgba(195, 154, 84, 0.4);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+            transition: width 0.3s, height 0.3s, border-color 0.3s, background-color 0.3s;
+            /* Smooth tracking via JS */
         }
+        .cursor-hover .cursor-dot { width: 0; height: 0; }
+        .cursor-hover .cursor-glow {
+            width: 60px; height: 60px;
+            background: rgba(195, 154, 84, 0.1);
+            border-color: #C39A54;
+            backdrop-filter: blur(2px);
+        }
+
+        /* ==========================================
+           BACKGROUND EFFECTS & GLASSMORPHISM
+           ========================================== */
+        .noise-bg {
+            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+            pointer-events: none; z-index: 9998; opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.015);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+                        border-color 0.4s ease, box-shadow 0.4s ease;
+        }
+        .glass-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(195, 154, 84, 0.3);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5), 
+                        0 0 20px -5px rgba(195, 154, 84, 0.1);
+        }
+
+        .text-gradient-gold {
+            background: linear-gradient(135deg, #FFF 0%, #C39A54 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Progress Bar */
+        #scroll-progress {
+            position: fixed; top: 0; left: 0; width: 0%; height: 3px;
+            background: linear-gradient(90deg, transparent, #C39A54);
+            z-index: 9999;
+            transition: width 0.1s ease-out;
+        }
+
+        /* ==========================================
+           ANIMATIONS (Scroll Reveal)
+           ========================================== */
+        .reveal-up {
+            opacity: 0; transform: translateY(40px);
+            transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), 
+                        transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-up.in-view { opacity: 1; transform: translateY(0); }
+        
+        .reveal-scale {
+            opacity: 0; transform: scale(0.95);
+            transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-scale.in-view { opacity: 1; transform: scale(1); }
+
     </style>
 </head>
-<body class="bg-neutral-950 text-gray-200 antialiased">
+<body class="antialiased selection:bg-brand-gold selection:text-brand-dark relative">
 
-    <!-- Toile 3D pour la section Hero -->
-    <div id="canvas-container" class="absolute top-0 left-0 w-full h-screen z-0">
-        <canvas id="hero-canvas"></canvas>
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+
+    <!-- Noise Texture -->
+    <div class="noise-bg"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot hidden md:block" id="cursor-dot"></div>
+    <div class="cursor-glow hidden md:block" id="cursor-glow"></div>
+
+    <!-- Ambient Glowing Orbs Background -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
+        <div class="absolute top-[-10%] left-[-10%] w-[40vw] h-[40vw] bg-brand-gold/10 rounded-full mix-blend-screen filter blur-[100px] animate-blob"></div>
+        <div class="absolute top-[20%] right-[-10%] w-[35vw] h-[35vw] bg-[#4F46E5]/10 rounded-full mix-blend-screen filter blur-[120px] animate-blob animation-delay-2000"></div>
+        <div class="absolute bottom-[-20%] left-[20%] w-[50vw] h-[50vw] bg-brand-gold/5 rounded-full mix-blend-screen filter blur-[150px] animate-blob animation-delay-4000"></div>
     </div>
 
-    <!-- En-tête (Header) -->
-    <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
-        <nav class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20 bg-neutral-950/70 backdrop-blur-md rounded-b-lg px-6 shadow-lg">
-                <div class="flex-shrink-0">
-                    <a href="#introduction" class="text-2xl font-bold text-white">Méthode SAMYN</a>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#introduction" class="text-gray-300 hover:text-white transition-colors">Accueil</a>
-                    <a href="#phase1" class="text-gray-300 hover:text-white transition-colors">Phase 1</a>
-                    <a href="#phase2" class="text-gray-300 hover:text-white transition-colors">Phase 2</a>
-                    <a href="#phase3" class="text-gray-300 hover:text-white transition-colors">Phase 3</a>
-                    <a href="#contact" class="text-gray-300 hover:text-white transition-colors">Contact</a>
-                </div>
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none" aria-label="Ouvrir le menu" aria-expanded="false">
-                        <!-- CORRECTIF EXPERT : A11y (Accessibilité) -->
-                        <span class="sr-only">Ouvrir le menu</span>
-                        <i id="mobile-menu-icon" class="fas fa-bars text-2xl"></i>
-                    </button>
-                </div>
-            </div>
-        </nav>
-        <!-- Menu Mobile -->
-        <div id="mobile-menu" class="hidden md:hidden bg-neutral-900/90 backdrop-blur-lg mx-4 rounded-lg shadow-xl">
-            <a href="#introduction" class="block text-white px-6 py-3 text-base mobile-link">Accueil</a>
-            <a href="#phase1" class="block text-white px-6 py-3 text-base mobile-link">Phase 1</a>
-            <a href="#phase2" class="block text-white px-6 py-3 text-base mobile-link">Phase 2</a>
-            <a href="#phase3" class="block text-white px-6 py-3 text-base mobile-link">Phase 3</a>
-            <a href="#contact" class="block text-white px-6 py-3 text-base mobile-link">Contact</a>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-card border-none border-b border-white/5 py-4 px-6 md:px-12 flex justify-between items-center bg-brand-dark/50 backdrop-blur-md">
+        <div class="font-display font-bold text-xl tracking-tight text-white flex items-center gap-2 magnetic-target">
+            <span class="w-3 h-3 rounded-full bg-brand-gold shadow-[0_0_10px_rgba(195,154,84,0.5)]"></span>
+            SAMYN<span class="text-brand-muted font-light">.</span>
         </div>
-    </header>
+        <div class="hidden md:flex space-x-10 font-sans text-xs uppercase tracking-[0.2em] font-medium text-brand-muted">
+            <a href="#vision" class="hover:text-brand-gold transition-colors hover-trigger">Vision</a>
+            <a href="#execution" class="hover:text-brand-gold transition-colors hover-trigger">Exécution</a>
+            <a href="#evaluation" class="hover:text-brand-gold transition-colors hover-trigger">Élévation</a>
+        </div>
+        <div>
+            <a href="#framework" class="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-brand-gold/50 text-brand-gold text-xs font-semibold uppercase tracking-wider hover:bg-brand-gold hover:text-brand-dark transition-all duration-300 magnetic-target hover-trigger">
+                Découvrir <i data-feather="arrow-down" class="w-3 h-3"></i>
+            </a>
+            <!-- Menu burger mobile -->
+            <button class="md:hidden text-white"><i data-feather="menu"></i></button>
+        </div>
+    </nav>
 
-    <main>
-        <!-- Section Hero (Immersive 3D) -->
-        <section id="introduction" class="h-screen flex items-center justify-center text-center relative px-4">
-            <div class="hero-content space-y-6">
-                <h2 class="text-5xl md:text-7xl font-bold text-white tracking-tight" style="opacity: 0; transform: translateY(30px);">
-                    Révolutionnez Votre Productivité
-                </h2>
-                <h1 class="text-6xl md:text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500" style="opacity: 0; transform: translateY(30px);">
-                    Méthode SAMYN
-                </h1>
-                <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto" style="opacity: 0; transform: translateY(30px);">
-                    L'approche Noiro-Musulmane éprouvée pour transcender vos objectifs personnels et professionnels.
-                </p>
-                <div style="opacity: 0; transform: translateY(30px);">
-                    <a href="#phase1" class="inline-block bg-amber-600 text-white font-semibold px-8 py-3 rounded-lg text-lg shadow-lg hover:bg-amber-700 transition-all duration-300 transform hover:scale-105">
-                        Découvrir la Méthode
-                    </a>
-                </div>
+    <main class="w-full pt-32 pb-24">
+        
+        <!-- ================= HERO SECTION ================= -->
+        <section class="relative min-h-[80vh] flex flex-col justify-center items-center text-center px-4 md:px-12 mb-24">
+            
+            <div class="inline-flex items-center gap-3 px-4 py-1.5 rounded-full glass-card mb-8 reveal-up">
+                <span class="relative flex h-2 w-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-gold opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-gold"></span>
+                </span>
+                <span class="font-sans text-[10px] uppercase tracking-widest text-brand-muted font-semibold">Framework Actif</span>
             </div>
 
-            <!-- 
-              CORRECTIF EXPERT : A11y & Performance (Pause Animation)
-              Bouton pour permettre aux utilisateurs (troubles vestibulaires) 
-              de pauser l'animation 3D.
-            -->
-            <button id="pause-animation-button" aria-label="Mettre l'animation en pause" class="absolute bottom-6 right-6 z-10 text-white bg-neutral-800/50 backdrop-blur-sm rounded-full w-12 h-12 flex items-center justify-center transition-colors hover:bg-neutral-700">
-                <i id="pause-icon" class="fas fa-pause"></i>
-                <span class="sr-only">Mettre l'animation en pause</span>
-            </button>
-        </section>
+            <h1 class="font-display font-bold text-[12vw] md:text-[8vw] lg:text-[7vw] leading-[0.9] tracking-tighter mix-blend-lighten reveal-up" style="transition-delay: 0.1s;">
+                LA MÉTHODE<br>
+                <span class="text-gradient-gold">SAMYN.</span>
+            </h1>
+            
+            <p class="mt-8 font-sans text-lg md:text-xl text-brand-muted max-w-2xl mx-auto font-light leading-relaxed reveal-up" style="transition-delay: 0.2s;">
+                Un écosystème stratégique conçu pour la clarté, l'exécution implacable et l'élévation continue. L'art d'aligner vision, action et spiritualité.
+            </p>
 
-        <!-- Phase 1: Vision et Stratégie -->
-        <section id="phase1" class="py-24 bg-neutral-950">
-            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <h2 class="gsap-title text-4xl md:text-5xl font-bold text-center text-white mb-16">
-                    Phase 1 : Vision et Stratégie
-                </h2>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Carte 1 -->
-                    <div class="gsap-card bg-neutral-900 p-8 rounded-xl shadow-2xl border border-neutral-700 transition-all duration-300 hover:scale-105 hover:border-amber-500">
-                        <div class="text-amber-400 mb-4"><i class="fas fa-bullseye fa-3x"></i></div>
-                        <h3 class="text-2xl font-semibold text-white mb-4">1. Vision Clarifiée</h3>
-                        <ul class="space-y-3 text-gray-300">
-                            <li class="flex items-start"><i class="fas fa-check-circle text-amber-500 mt-1 mr-3"></i><strong>Définition de la Vision</strong> : Établissez une vision claire et inspirante.</li>
-                            <li class="flex items-start"><i class="fas fa-check-circle text-amber-500 mt-1 mr-3"></i><strong>Objectifs SMART</strong> : Formulez des objectifs spécifiques et mesurables.</li>
-                        </ul>
-                    </div>
-                    <!-- Carte 2 -->
-                    <div class="gsap-card bg-neutral-900 p-8 rounded-xl shadow-2xl border border-neutral-700 transition-all duration-300 hover:scale-105 hover:border-amber-500">
-                        <div class="text-amber-400 mb-4"><i class="fas fa-book-open fa-3x"></i></div>
-                        <h3 class="text-2xl font-semibold text-white mb-4">2. Journaling Avancé</h3>
-                        <ul class="space-y-3 text-gray-300">
-                            <li class="flex items-start"><i class="fas fa-check-circle text-amber-500 mt-1 mr-3"></i><strong>Journaling Stratégique</strong> : Suivez les progrès, insights et échecs.</li>
-                            <li class="flex items-start"><i class="fas fa-check-circle text-amber-500 mt-1 mr-3"></i><strong>Planification Agile</strong> : Adoptez Scrum pour une adaptation rapide.</li>
-                        </ul>
-                    </div>
-                    <!-- Carte 3 -->
-                    <div class="gsap-card bg-neutral-900 p-8 rounded-xl shadow-2xl border border-neutral-700 transition-all duration-300 hover:scale-105 hover:border-amber-500">
-                        <div class="text-amber-400 mb-4"><i class="fas fa-search-plus fa-3x"></i></div>
-                        <h3 class="text-2xl font-semibold text-white mb-4">3. Recherche et Innovation</h3>
-                        <ul class="space-y-3 text-gray-300">
-                            <li class="flex items-start"><i class="fas fa-check-circle text-amber-500 mt-1 mr-3"></i><strong>Recherche Proactive</strong> : Dédiez du temps aux nouvelles tendances.</li>
-                            <li class="flex items-start"><i class="fas fa-check-circle text-amber-500 mt-1 mr-3"></i><strong>Culture de l’Innovation</strong> : Encouragez l’expérimentation et l'apprentissage.</li>
-                        </ul>
-                    </div>
-                    <!-- Carte 4 -->
-                    <div class="gsap-card bg-neutral-900 p-8 rounded-xl shadow-2xl border border-neutral-700 transition-all duration-300 hover:scale-105 hover:border-amber-500">
-                        <div class="text-amber-400 mb-4"><i class="fas fa-chart-line fa-3x"></i></div>
-                        <h3 class="text-2xl font-semibold text-white mb-4">4. Analyse Financière</h3>
-                        <ul class="space-y-3 text-gray-300">
-                            <li class="flex items-start"><i class="fas fa-check-circle text-amber-500 mt-1 mr-3"></i><strong>Modélisation Financière</strong> : Utilisez des simulations pour des décisions éclairées.</li>
-                            <li class="flex items-start"><i class="fas fa-check-circle text-amber-500 mt-1 mr-3"></i><strong>Gestion des Risques</strong> : Mettez en place un cadre dynamique et prédictif.</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="mt-16 animate-bounce text-brand-muted/50 reveal-up" style="transition-delay: 0.4s;">
+                <i data-feather="mouse-pointer" class="w-6 h-6"></i>
             </div>
         </section>
 
-        <!-- Phase 2: Collaboration et Exécution -->
-        <section id="phase2" class="py-24 bg-neutral-900"> <!-- Fond alternatif -->
-            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <h2 class="gsap-title text-4xl md:text-5xl font-bold text-center text-white mb-16">
-                    Phase 2 : Collaboration et Exécution
-                </h2>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Carte 1 -->
-                    <div class="gsap-card bg-neutral-800 p-8 rounded-xl shadow-2xl border border-neutral-700 transition-all duration-300 hover:scale-105 hover:border-orange-500">
-                        <div class="text-orange-400 mb-4"><i class="fas fa-users fa-3x"></i></div>
-                        <h3 class="text-2xl font-semibold text-white mb-4">1. Équipe d’Experts</h3>
-                        <ul class="space-y-3 text-gray-300">
-                            <li class="flex items-start"><i class="fas fa-check-circle text-orange-500 mt-1 mr-3"></i><strong>Recrutement de Talents</strong> : Créez une équipe multidisciplinaire.</li>
-                            <li class="flex items-start"><i class="fas fa-check-circle text-orange-500 mt-1 mr-3"></i><strong>Culture de Collaboration</strong> : Favorisez un environnement ouvert et transparent.</li>
-                        </ul>
-                    </div>
-                    <!-- Carte 2 -->
-                    <div class="gsap-card bg-neutral-800 p-8 rounded-xl shadow-2xl border border-neutral-700 transition-all duration-300 hover:scale-105 hover:border-orange-500">
-                        <div class="text-orange-400 mb-4"><i class="fas fa-comments fa-3x"></i></div>
-                        <h3 class="text-2xl font-semibold text-white mb-4">2. Communication Efficace</h3>
-                        <ul class="space-y-3 text-gray-300">
-                            <li class="flex items-start"><i class="fas fa-check-circle text-orange-500 mt-1 mr-3"></i><strong>Documentation Efficace</strong> : Documentez chaque étape pour un alignement parfait.</li>
-                            <li class="flex items-start"><i class="fas fa-check-circle text-orange-500 mt-1 mr-3"></i><strong>Langage Impactant</strong> : Rédigez de manière percutante et engageante.</li>
-                        </ul>
-                    </div>
-                    <!-- Carte 3 -->
-                    <div class="gsap-card bg-neutral-800 p-8 rounded-xl shadow-2xl border border-neutral-700 transition-all duration-300 hover:scale-105 hover:border-orange-500">
-                        <div class="text-orange-400 mb-4"><i class="fas fa-microchip fa-3x"></i></div>
-                        <h3 class="text-2xl font-semibold text-white mb-4">3. Technologies de Pointe</h3>
-                        <ul class="space-y-3 text-gray-300">
-                            <li class="flex items-start"><i class="fas fa-check-circle text-orange-500 mt-1 mr-3"></i><strong>Automatisation et Outils</strong> : Intégrez Zapier, Asana, ou Monday.com.</li>
-                            <li class="flex items-start"><i class="fas fa-check-circle text-orange-500 mt-1 mr-3"></i><strong>Analyse de Données</strong> : Suivez les performances en temps réel.</li>
-                        </ul>
-                    </div>
-                    <!-- Carte 4 -->
-                    <div class="gsap-card bg-neutral-800 p-8 rounded-xl shadow-2xl border border-neutral-700 transition-all duration-300 hover:scale-105 hover:border-orange-500">
-                        <div class="text-orange-400 mb-4"><i class="fas fa-lightbulb fa-3x"></i></div>
-                        <h3 class="text-2xl font-semibold text-white mb-4">4. Créativité</h3>
-                        <ul class="space-y-3 text-gray-300">
-                            <li class="flex items-start"><i class="fas fa-check-circle text-orange-500 mt-1 mr-3"></i><strong>Sessions de Co-Création</strong> : Organisez des ateliers de design thinking.</li>
-                            <li class="flex items-start"><i class="fas fa-check-circle text-orange-500 mt-1 mr-3"></i><strong>Feedback Constructif</strong> : Mettez en place des systèmes d'amélioration continue.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- ================= THE FRAMEWORK ================= -->
+        <div id="framework" class="max-w-7xl mx-auto px-4 md:px-12 space-y-32">
 
-        <!-- Phase 3: Suivi, Évaluation et Célébration -->
-        <section id="phase3" class="py-24 bg-neutral-950">
-            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <h2 class="gsap-title text-4xl md:text-5xl font-bold text-center text-white mb-16">
-                    Phase 3 : Suivi, Évaluation et Célébration
-                </h2>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Carte 1 -->
-                    <div class="gsap-card bg-neutral-900 p-8 rounded-xl shadow-2xl border border-neutral-700 transition-all duration-300 hover:scale-105 hover:border-red-500">
-                        <div class="text-red-400 mb-4"><i class="fas fa-clipboard-check fa-3x"></i></div>
-                        <h3 class="text-2xl font-semibold text-white mb-4">1. Exécution Rigoureuse</h3>
-                        <ul class="space-y-3 text-gray-300">
-                            <li class="flex items-start"><i class="fas fa-check-circle text-red-500 mt-1 mr-3"></i><strong>Mise en Œuvre</strong> : Déployez le plan avec précision et suivez les KPI.</li>
-                            <li class="flex items-start"><i class="fas fa-check-circle text-red-500 mt-1 mr-3"></i><strong>Adaptation Agile</strong> : Ajustez le plan en fonction des résultats et retours.</li>
-                        </ul>
+            <!-- PHASE 1: VISION -->
+            <section id="vision" class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 relative">
+                <!-- Sticky Header -->
+                <div class="lg:col-span-5 lg:sticky top-40 h-fit reveal-up">
+                    <div class="font-mono text-brand-gold text-sm mb-4 tracking-widest">PHASE 01</div>
+                    <h2 class="font-display text-5xl md:text-6xl font-bold mb-6 tracking-tight">Vision &<br>Stratégie</h2>
+                    <p class="font-sans text-brand-muted text-lg leading-relaxed">
+                        La fondation de tout succès réside dans une direction claire. Définir des objectifs, anticiper les risques et cultiver une culture d'innovation.
+                    </p>
+                </div>
+
+                <!-- Content Cards -->
+                <div class="lg:col-span-7 flex flex-col gap-6">
+                    <!-- Item 1 -->
+                    <div class="glass-card rounded-2xl p-8 hover-trigger reveal-scale">
+                        <div class="flex items-start gap-6">
+                            <div class="p-4 rounded-xl bg-brand-gold/10 text-brand-gold border border-brand-gold/20">
+                                <i data-feather="target" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-display text-2xl font-bold mb-3">Vision Clarifiée</h3>
+                                <ul class="font-sans text-brand-muted space-y-2 text-sm md:text-base">
+                                    <li><strong class="text-white font-medium">Définition :</strong> Établissez une vision claire et inspirante.</li>
+                                    <li><strong class="text-white font-medium">Objectifs SMART :</strong> Formulez des objectifs spécifiques, mesurables, atteignables, réalistes et temporels.</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Carte 2 -->
-                    <div class="gsap-card bg-neutral-900 p-8 rounded-xl shadow-2xl border border-neutral-700 transition-all duration-300 hover:scale-105 hover:border-red-500">
-                        <div class="text-red-400 mb-4"><i class="fas fa-graduation-cap fa-3x"></i></div>
-                        <h3 class="text-2xl font-semibold text-white mb-4">2. Évaluation et Apprentissage</h3>
-                        <ul class="space-y-3 text-gray-300">
-                            <li class="flex items-start"><i class="fas fa-check-circle text-red-500 mt-1 mr-3"></i><strong>Revues Post-Projet</strong> : Identifiez les succès et les leçons apprises.</li>
-                            <li class="flex items-start"><i class="fas fa-check-circle text-red-500 mt-1 mr-3"></i><strong>Système de Mentorat</strong> : Favorisez le développement continu.</li>
-                        </ul>
+
+                    <!-- Item 2 -->
+                    <div class="glass-card rounded-2xl p-8 hover-trigger reveal-scale">
+                        <div class="flex items-start gap-6">
+                            <div class="p-4 rounded-xl bg-white/5 text-white border border-white/10">
+                                <i data-feather="book-open" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-display text-2xl font-bold mb-3">Journaling Avancé</h3>
+                                <ul class="font-sans text-brand-muted space-y-2 text-sm md:text-base">
+                                    <li><strong class="text-white font-medium">Journaling Stratégique :</strong> Suivez les progrès, insights et échecs.</li>
+                                    <li><strong class="text-white font-medium">Planification Agile :</strong> Adoptez Scrum pour une adaptation rapide.</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Carte 3 -->
-                    <div class="gsap-card bg-neutral-900 p-8 rounded-xl shadow-2xl border border-neutral-700 transition-all duration-300 hover:scale-105 hover:border-red-500">
-                        <div class="text-red-400 mb-4"><i class="fas fa-hand-holding-heart fa-3x"></i></div>
-                        <h3 class="text-2xl font-semibold text-white mb-4">3. Pratique Spirituelle</h3>
-                        <ul class="space-y-3 text-gray-300">
-                            <li class="flex items-start"><i class="fas fa-check-circle text-red-500 mt-1 mr-3"></i><strong>Rituels de Gratitude</strong> : Intégrez la gratitude à ALLAH pour renforcer la motivation.</li>
-                            <li class="flex items-start"><i class="fas fa-check-circle text-red-500 mt-1 mr-3"></i><strong>Visualisation Halal</strong> : Renforcez la connexion à votre objectif final.</li>
-                        </ul>
+
+                    <!-- Item 3 -->
+                    <div class="glass-card rounded-2xl p-8 hover-trigger reveal-scale">
+                        <div class="flex items-start gap-6">
+                            <div class="p-4 rounded-xl bg-white/5 text-white border border-white/10">
+                                <i data-feather="zap" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-display text-2xl font-bold mb-3">Recherche & Innovation</h3>
+                                <ul class="font-sans text-brand-muted space-y-2 text-sm md:text-base">
+                                    <li><strong class="text-white font-medium">Recherche Proactive :</strong> Dédiez du temps aux nouvelles tendances.</li>
+                                    <li><strong class="text-white font-medium">Culture :</strong> Encouragez l'expérimentation et l'apprentissage constant.</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Carte 4 -->
-                    <div class="gsap-card bg-neutral-900 p-8 rounded-xl shadow-2xl border border-neutral-700 transition-all duration-300 hover:scale-105 hover:border-red-500">
-                        <div class="text-red-400 mb-4"><i class="fas fa-trophy fa-3x"></i></div>
-                        <h3 class="text-2xl font-semibold text-white mb-4">4. Célébration des Succès</h3>
-                        <ul class="space-y-3 text-gray-300">
-                            <li class="flex items-start"><i class="fas fa-check-circle text-red-500 mt-1 mr-3"></i><strong>Célébration Collective</strong> : Célébrez chaque victoire pour renforcer la cohésion.</li>
-                        </ul>
+
+                     <!-- Item 4 -->
+                     <div class="glass-card rounded-2xl p-8 hover-trigger reveal-scale">
+                        <div class="flex items-start gap-6">
+                            <div class="p-4 rounded-xl bg-white/5 text-white border border-white/10">
+                                <i data-feather="pie-chart" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-display text-2xl font-bold mb-3">Analyse Financière</h3>
+                                <ul class="font-sans text-brand-muted space-y-2 text-sm md:text-base">
+                                    <li><strong class="text-white font-medium">Modélisation :</strong> Utilisez des simulations pour des décisions éclairées.</li>
+                                    <li><strong class="text-white font-medium">Gestion des Risques :</strong> Cadre dynamique et prédictif.</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+
+            <!-- PHASE 2: EXECUTION -->
+            <section id="execution" class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 relative pt-12 border-t border-white/5">
+                <!-- Sticky Header (Right side this time for variation on desktop) -->
+                <div class="lg:col-span-5 lg:col-start-8 lg:sticky top-40 h-fit reveal-up lg:order-2">
+                    <div class="font-mono text-brand-gold text-sm mb-4 tracking-widest">PHASE 02</div>
+                    <h2 class="font-display text-5xl md:text-6xl font-bold mb-6 tracking-tight">Collaboration &<br>Exécution</h2>
+                    <p class="font-sans text-brand-muted text-lg leading-relaxed">
+                        L'idée n'est rien sans l'exécution. Construire des équipes d'élite, automatiser les processus et communiquer avec impact.
+                    </p>
+                </div>
+
+                <!-- Content Cards -->
+                <div class="lg:col-span-7 flex flex-col gap-6 lg:order-1">
+                    <!-- Item 1 -->
+                    <div class="glass-card rounded-2xl p-8 hover-trigger reveal-scale">
+                        <div class="flex items-start gap-6">
+                            <div class="p-4 rounded-xl bg-brand-gold/10 text-brand-gold border border-brand-gold/20">
+                                <i data-feather="users" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-display text-2xl font-bold mb-3">Équipe d'Experts</h3>
+                                <ul class="font-sans text-brand-muted space-y-2 text-sm md:text-base">
+                                    <li><strong class="text-white font-medium">Recrutement :</strong> Créez une équipe multidisciplinaire de talents.</li>
+                                    <li><strong class="text-white font-medium">Culture :</strong> Favorisez un environnement ouvert et transparent.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="glass-card rounded-2xl p-8 hover-trigger reveal-scale">
+                        <div class="flex items-start gap-6">
+                            <div class="p-4 rounded-xl bg-white/5 text-white border border-white/10">
+                                <i data-feather="message-square" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-display text-2xl font-bold mb-3">Communication</h3>
+                                <ul class="font-sans text-brand-muted space-y-2 text-sm md:text-base">
+                                    <li><strong class="text-white font-medium">Documentation :</strong> Rédigez chaque étape pour un alignement parfait.</li>
+                                    <li><strong class="text-white font-medium">Langage Impactant :</strong> Rédigez de manière percutante et engageante.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grid for smaller items -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="glass-card rounded-2xl p-6 hover-trigger reveal-scale">
+                            <i data-feather="cpu" class="w-8 h-8 text-white mb-4"></i>
+                            <h3 class="font-display text-xl font-bold mb-2">Technologies</h3>
+                            <p class="font-sans text-brand-muted text-sm">Automatisation via Zapier/Asana et analyse de données en temps réel.</p>
+                        </div>
+                        <div class="glass-card rounded-2xl p-6 hover-trigger reveal-scale">
+                            <i data-feather="pen-tool" class="w-8 h-8 text-white mb-4"></i>
+                            <h3 class="font-display text-xl font-bold mb-2">Créativité</h3>
+                            <p class="font-sans text-brand-muted text-sm">Sessions de Design Thinking et systèmes de feedback constructif.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PHASE 3: EVALUATION & SPIRIT -->
+            <section id="evaluation" class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 relative pt-12 border-t border-white/5">
+                <!-- Sticky Header -->
+                <div class="lg:col-span-5 lg:sticky top-40 h-fit reveal-up">
+                    <div class="font-mono text-brand-gold text-sm mb-4 tracking-widest">PHASE 03</div>
+                    <h2 class="font-display text-5xl md:text-6xl font-bold mb-6 tracking-tight">Suivi &<br>Élévation</h2>
+                    <p class="font-sans text-brand-muted text-lg leading-relaxed">
+                        Mesurer l'impact, apprendre des échecs, célébrer les victoires et ancrer sa réussite dans la gratitude et la spiritualité.
+                    </p>
+                </div>
+
+                <!-- Content Cards -->
+                <div class="lg:col-span-7 flex flex-col gap-6">
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Item 1 -->
+                        <div class="glass-card rounded-2xl p-6 hover-trigger reveal-scale">
+                            <i data-feather="activity" class="w-6 h-6 text-white mb-4"></i>
+                            <h3 class="font-display text-xl font-bold mb-3">Exécution Rigoureuse</h3>
+                            <ul class="font-sans text-brand-muted space-y-2 text-sm">
+                                <li><strong class="text-white">Mise en Œuvre :</strong> Déploiement précis & KPI.</li>
+                                <li><strong class="text-white">Adaptation :</strong> Ajustement agile post-retours.</li>
+                            </ul>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="glass-card rounded-2xl p-6 hover-trigger reveal-scale">
+                            <i data-feather="award" class="w-6 h-6 text-white mb-4"></i>
+                            <h3 class="font-display text-xl font-bold mb-3">Évaluation</h3>
+                            <ul class="font-sans text-brand-muted space-y-2 text-sm">
+                                <li><strong class="text-white">Revues :</strong> Analyse des succès et leçons.</li>
+                                <li><strong class="text-white">Mentorat :</strong> Développement continu.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Spiritual Practice (Highlighted) -->
+                    <div class="glass-card rounded-2xl p-8 border-brand-gold/30 hover-trigger reveal-scale relative overflow-hidden group">
+                        <!-- Subtle background glow for this specific card -->
+                        <div class="absolute inset-0 bg-gradient-to-br from-brand-gold/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        
+                        <div class="relative z-10 flex items-start gap-6">
+                            <div class="p-4 rounded-xl bg-brand-gold text-brand-dark shadow-[0_0_20px_rgba(195,154,84,0.4)]">
+                                <i data-feather="heart" class="w-6 h-6 fill-brand-dark"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-display text-2xl font-bold mb-3 text-brand-gold">Pratique Spirituelle</h3>
+                                <ul class="font-sans text-brand-muted space-y-3 text-sm md:text-base">
+                                    <li><strong class="text-white font-medium">Rituels de Gratitude :</strong> Intégrez la gratitude à <strong>ALLAH</strong> pour renforcer la motivation et la résilience quotidienne.</li>
+                                    <li><strong class="text-white font-medium">Visualisation Halal :</strong> Renforcez la connexion saine et éthique à votre objectif final.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="glass-card rounded-2xl p-6 text-center hover-trigger reveal-scale flex flex-col items-center justify-center py-12">
+                        <i data-feather="star" class="w-8 h-8 text-brand-gold mb-4"></i>
+                        <h3 class="font-display text-2xl font-bold mb-2">Célébration des Succès</h3>
+                        <p class="font-sans text-brand-muted">Célébrez chaque victoire, petite ou grande, pour renforcer la cohésion collective.</p>
+                    </div>
+
+                </div>
+            </section>
+        </div>
     </main>
 
-    <!-- Pied de page (Footer) -->
-    <footer id="contact" class="bg-neutral-900 border-t border-neutral-800">
-        <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 text-center">
-            <p class="text-gray-400">&copy; 2025 Méthode SAMYN. Tous droits réservés.</p>
-            <div class="flex justify-center space-x-6 mt-6">
-                <a href="https://www.linkedin.com/in/samyn-antoy-abasse-438746171/" aria-label="LinkedIn" class="text-gray-400 hover:text-amber-500 transition-colors">
-                    <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-                <a href="https://www.youtube.com/@RTNfromRC" aria-label="YouTube" class="text-gray-400 hover:text-red-500 transition-colors">
-                    <i class="fab fa-youtube-square fa-2x"></i>
-                </a>
+    <!-- ================= FOOTER ================= -->
+    <footer class="border-t border-white/5 bg-brand-dark/80 backdrop-blur-md pt-20 pb-10 mt-20 relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[50vw] h-[1px] bg-gradient-to-r from-transparent via-brand-gold/30 to-transparent"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 md:px-12 flex flex-col items-center text-center">
+            <div class="w-12 h-12 rounded-full border border-brand-gold/30 flex items-center justify-center text-brand-gold mb-8 magnetic-target hover-trigger">
+                <i data-feather="arrow-up" class="w-5 h-5 cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"></i>
+            </div>
+            <h2 class="font-display text-3xl md:text-5xl font-bold tracking-tight mb-4 text-gradient-gold">La Méthode SAMYN.</h2>
+            <p class="font-sans text-brand-muted text-sm mb-12 max-w-md">L'excellence n'est pas un acte, mais une habitude forgée par une méthode rigoureuse.</p>
+            
+            <div class="w-full border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-mono text-brand-muted tracking-widest uppercase">
+                <div>&copy; 2026 SAMYN. All Rights Reserved.</div>
+                <div class="flex gap-6">
+                    <span class="hover:text-brand-gold transition-colors cursor-none">Version 2.0</span>
+                    <span class="text-brand-gold">Système Actif</span>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- ============================================= -->
-    <!-- JAVASCRIPT INTÉGRÉ (POUR GITHUB PAGES)        -->
-    <!-- ============================================= -->
+    <!-- ================= SCRIPTS ================= -->
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            
-            // --- CORRECTIF EXPERT : Logique d'animation et de focus ---
-            let isAnimationPaused = false;
-            let isWindowFocused = true;
+        // Init Icons
+        feather.replace();
 
-            // --- 1. Logique du Menu Mobile (Mise à jour pour UX fluide) ---
-            const menuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const mobileIcon = document.getElementById('mobile-menu-icon');
-            const mobileLinks = document.querySelectorAll('.mobile-link');
-
-            menuButton.addEventListener('click', () => {
-                const isHidden = mobileMenu.classList.toggle('hidden');
-                
-                // CORRECTIF EXPERT : A11y (aria-expanded) et icône
-                if (isHidden) {
-                    menuButton.setAttribute('aria-expanded', 'false');
-                    mobileIcon.classList.remove('fa-xmark');
-                    mobileIcon.classList.add('fa-bars');
-                } else {
-                    menuButton.setAttribute('aria-expanded', 'true');
-                    mobileIcon.classList.remove('fa-bars');
-                    mobileIcon.classList.add('fa-xmark');
-                }
-            });
-
-            // Fermer le menu en cliquant sur un lien
-            mobileLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.add('hidden');
-                });
-            });
-
-            // --- 2. Logique de la Scène 3D (Three.js) ---
-            let scene, camera, renderer, particles;
-            const canvasContainer = document.getElementById('canvas-container');
-            const canvas = document.getElementById('hero-canvas');
-
-            // --- CORRECTIF EXPERT : A11y & Performance (Bouton Pause) ---
-            const pauseButton = document.getElementById('pause-animation-button');
-            const pauseIcon = document.getElementById('pause-icon');
-            const pauseSrText = pauseButton.querySelector('.sr-only');
-
-            pauseButton.addEventListener('click', () => {
-                isAnimationPaused = !isAnimationPaused;
-                if (isAnimationPaused) {
-                    pauseIcon.classList.remove('fa-pause');
-                    pauseIcon.classList.add('fa-play');
-                    pauseButton.setAttribute('aria-label', "Reprendre l'animation");
-                    pauseSrText.textContent = "Reprendre l'animation";
-                } else {
-                    pauseIcon.classList.remove('fa-play');
-                    pauseIcon.classList.add('fa-pause');
-                    pauseButton.setAttribute('aria-label', "Mettre l'animation en pause");
-                    pauseSrText.textContent = "Mettre l'animation en pause";
-                }
-            });
-
-            // --- CORRECTIF EXPERT : Performance (Gestion du Focus) ---
-            // Stoppe l'animation si l'utilisateur quitte l'onglet
-            window.addEventListener('focus', () => { isWindowFocused = true; });
-            window.addEventListener('blur', () => { isWindowFocused = false; });
-
-
-            function initThreeJS() {
-                scene = new THREE.Scene();
-                
-                // Caméra
-                camera = new THREE.PerspectiveCamera(75, canvasContainer.clientWidth / canvasContainer.clientHeight, 0.1, 1000);
-                camera.position.z = 50; // Recul de la caméra
-
-                // Renderer
-                renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true }); // alpha: true pour fond transparent
-                renderer.setSize(canvasContainer.clientWidth, canvasContainer.clientHeight);
-                renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-
-                // Création des particules
-                const particleCount = 10000;
-                const positions = new Float32Array(particleCount * 3);
-                const colors = new Float32Array(particleCount * 3);
-                const color = new THREE.Color();
-
-                for (let i = 0; i < particleCount; i++) {
-                    const i3 = i * 3;
-                    
-                    // Position (sphère galactique)
-                    const radius = 40 + Math.random() * 40;
-                    const theta = Math.random() * Math.PI * 2;
-                    const phi = Math.random() * Math.PI * 2;
-                    
-                    positions[i3] = radius * Math.sin(theta) * Math.cos(phi);
-                    positions[i3 + 1] = radius * Math.sin(theta) * Math.sin(phi);
-                    positions[i3 + 2] = radius * Math.cos(theta);
-
-                    // Couleur (nuances de bleu/cyan)
-                    color.set(Math.random() > 0.5 ? 0xffc107 : 0xff4500); // AMBRE/OR et ORANGE-ROUGE
-                    colors[i3] = color.r;
-                    colors[i3 + 1] = color.g;
-                    colors[i3 + 2] = color.b;
-                }
-
-                const particlesGeometry = new THREE.BufferGeometry();
-                particlesGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
-                particlesGeometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
-
-                const particlesMaterial = new THREE.PointsMaterial({
-                    size: 0.15,
-                    vertexColors: true,
-                    blending: THREE.AdditiveBlending,
-                    transparent: true,
-                    opacity: 0.8,
-                    depthWrite: false
-                });
-
-                particles = new THREE.Points(particlesGeometry, particlesMaterial);
-                scene.add(particles);
-
-                // Gestion du redimensionnement
-                window.addEventListener('resize', onWindowResize);
-                
-                // Démarrer l'animation
-                animate();
-            }
-
-            function onWindowResize() {
-                camera.aspect = canvasContainer.clientWidth / canvasContainer.clientHeight;
-                camera.updateProjectionMatrix();
-                renderer.setSize(canvasContainer.clientWidth, canvasContainer.clientHeight);
-                renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-            }
-
-            // Mouvement de la souris pour l'interaction
-            let mouseX = 0;
-            let mouseY = 0;
-            document.addEventListener('mousemove', (event) => {
-                mouseX = (event.clientX / window.innerWidth) * 2 - 1;
-                mouseY = -(event.clientY / window.innerHeight) * 2 + 1;
-            });
-
-            // Boucle d'animation
-            const clock = new THREE.Clock();
-            function animate() {
-                // Garde la boucle en vie, peu importe les conditions
-                requestAnimationFrame(animate);
-
-                // --- CORRECTIF EXPERT : Performance & A11y ---
-                // Ne calcule le rendu que si l'animation n'est pas en pause
-                // ET que l'utilisateur regarde activement l'onglet.
-                // Cela économise la batterie et les ressources CPU.
-                if (isAnimationPaused || !isWindowFocused) {
-                    return; // Saute ce cycle de rendu
-                }
-                
-                const elapsedTime = clock.getElapsedTime();
-
-                // Rotation lente des particules
-                if (particles) {
-                    particles.rotation.y = elapsedTime * 0.05;
-                    particles.rotation.x = elapsedTime * 0.03;
-                }
-                
-                // Mouvement de la caméra basé sur la souris (parallaxe subtil)
-                camera.position.x += (mouseX * 5 - camera.position.x) * 0.01;
-                camera.position.y += (mouseY * 5 - camera.position.y) * 0.01;
-                camera.lookAt(scene.position);
-
-
-                renderer.render(scene, camera);
-            }
-
-            // Lancer Three.js
-            initThreeJS();
-
-
-            // --- 3. Logique d'Animation au Scroll (GSAP) ---
-            gsap.registerPlugin(ScrollTrigger);
-
-            // Animation du contenu Hero
-            gsap.to(".hero-content > *", {
-                opacity: 1,
-                y: 0,
-                duration: 1,
-                stagger: 0.2, // Délai entre chaque élément
-                ease: "power3.out",
-                delay: 0.5 // Délai avant le début
-            });
-            
-            // Animation des Titres de Section
-            const sectionTitles = gsap.utils.toArray('.gsap-title');
-            sectionTitles.forEach(title => {
-                gsap.to(title, {
-                    opacity: 1,
-                    y: 0,
-                    duration: 1,
-                    ease: 'power2.out',
-                    scrollTrigger: {
-                        trigger: title,
-                        start: 'top 85%', // Se déclenche quand 85% du haut est visible
-                        toggleActions: 'play none none none'
-                    }
-                });
-            });
-
-            // Animation des Cartes (en cascade)
-            const sections = document.querySelectorAll('section[id^="phase"]');
-            sections.forEach(section => {
-                const cards = section.querySelectorAll('.gsap-card');
-                gsap.to(cards, {
-                    opacity: 1,
-                    y: 0,
-                    duration: 0.8,
-                    stagger: 0.2, // Les cartes apparaissent l'une après l'autre
-                    ease: 'power2.out',
-                    scrollTrigger: {
-                        trigger: section, // Se déclenche basé sur la section parente
-                        start: 'top 70%',
-                        toggleActions: 'play none none none'
-                    }
-                });
-            });
-
+        // 1. Scroll Progress Bar
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('scroll-progress').style.width = scrolled + '%';
         });
-    </script>
 
+        // 2. Custom Advanced Cursor
+        const cursorDot = document.getElementById('cursor-dot');
+        const cursorGlow = document.getElementById('cursor-glow');
+        const hoverTriggers = document.querySelectorAll('.hover-trigger, a, button');
+        
+        let mouseX = window.innerWidth / 2;
+        let mouseY = window.innerHeight / 2;
+        let dotX = mouseX, dotY = mouseY;
+        let glowX = mouseX, glowY = mouseY;
+
+        // Check touch device to disable custom cursor and magnetic effects
+        const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+        if (!isTouchDevice) {
+            document.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+            });
+
+            // Lerp animation loop for smooth cursor follow
+            function renderCursor() {
+                // Fast follow for dot
+                dotX += (mouseX - dotX) * 0.4;
+                dotY += (mouseY - dotY) * 0.4;
+                // Slow/smooth follow for glow
+                glowX += (mouseX - glowX) * 0.15;
+                glowY += (mouseY - glowY) * 0.15;
+                
+                cursorDot.style.transform = `translate(${dotX}px, ${dotY}px)`;
+                cursorGlow.style.transform = `translate(${glowX}px, ${glowY}px)`;
+                
+                requestAnimationFrame(renderCursor);
+            }
+            requestAnimationFrame(renderCursor);
+
+            // Hover state
+            hoverTriggers.forEach(trigger => {
+                trigger.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
+                trigger.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
+            });
+
+            // 3. Magnetic Effect for specific buttons/elements
+            const magneticElements = document.querySelectorAll('.magnetic-target');
+            magneticElements.forEach(elem => {
+                elem.addEventListener('mousemove', (e) => {
+                    const rect = elem.getBoundingClientRect();
+                    const x = e.clientX - rect.left - rect.width / 2;
+                    const y = e.clientY - rect.top - rect.height / 2;
+                    
+                    // Move the element slightly towards the mouse
+                    elem.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
+                });
+
+                elem.addEventListener('mouseleave', () => {
+                    // Reset position smoothly
+                    elem.style.transform = 'translate(0px, 0px)';
+                    elem.style.transition = 'transform 0.5s cubic-bezier(0.16, 1, 0.3, 1)';
+                    setTimeout(() => { elem.style.transition = ''; }, 500);
+                });
+            });
+        } else {
+            // Hide custom cursor on mobile
+            cursorDot.style.display = 'none';
+            cursorGlow.style.display = 'none';
+            document.body.style.cursor = 'auto';
+        }
+
+        // 4. Advanced Scroll Reveal Observer (Staggered)
+        const revealElements = document.querySelectorAll('.reveal-up, .reveal-scale');
+        
+        const revealOptions = {
+            root: null,
+            rootMargin: '0px 0px -15% 0px',
+            threshold: 0.1
+        };
+
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                    observer.unobserve(entry.target); // Trigger only once
+                }
+            });
+        }, revealOptions);
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+    </script>
 </body>
 </html>
